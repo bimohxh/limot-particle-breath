@@ -1,0 +1,60 @@
+{
+  "name": "limot-particle-breath",
+  "version": "1.0.0",
+  "description": "A deterministic breathing particle background for JavaScript, React and Vue. Zero runtime dependencies. Made by Limot — https://limot.dev.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/*.test.js && tsc --noEmit --strict --module nodenext --target es2022 test/types.ts",
+    "dev": "node scripts/serve.js",
+    "prepublishOnly": "npm test"
+  },
+  "homepage": "https://limot.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimohxh/limot-particle-breath.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bimohxh/limot-particle-breath/issues"
+  },
+  "author": {
+    "name": "Limot",
+    "url": "https://limot.dev"
+  },
+  "license": "MIT",
+  "keywords": [
+    "limot",
+    "particle-breath",
+    "particles",
+    "animated-background",
+    "canvas",
+    "generative-art",
+    "breathing-animation",
+    "javascript",
+    "react",
+    "vue",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "typescript": "^7.0.2"
+  }
+}
